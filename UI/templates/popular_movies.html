@@ -1,0 +1,85 @@
+{% extends 'layout.html' %} {% block body %}
+
+<style>
+  .mt-0 {
+  margin-top: 50 !important;
+}
+
+table th{
+  background-color: #000;
+  color: white;
+  font-size: 24px;
+  font-weight: 900;
+ padding: .5rem;
+}
+table tr td{
+ color: #000;
+ padding: .5rem;
+   font-weight: 600;
+   font-size: 16px;
+ }
+
+</style>
+
+
+<div class="container py-2 mx-auto my-50 h-10 ">
+  <div class="row">
+      <div class="col-sm py-2 py-md-3">
+
+<div class="card card-body" style="justify-content: center;">
+  <div class="d-flex  align-items-start">
+    <a class="nav-link btn btn-info d-inline" href="{{ url_for('home') }}" ><i class="fa fa-chevron-left"></i> <b>Go Back</b></a>
+  <h1 class="text-center d-inline mb-3 " style="margin-left: 220px;"><b>{{ "Top 10 Popular movies " }} </b></h1> 
+
+  </div>
+    <table style="width:100%;border:5px solid black;font-size:24px; color: #000;">
+<tr>
+<th>Movie name</th>
+<th>Genres</th>
+</tr>
+<tr>
+<td>1.Inception</td>
+<td>Action, Thriller, Science Fiction, Mystery</td>
+</tr>
+<tr>
+<td>2.The Dark Knight</td>
+<td>Drama, Action, Crime, Thriller</td>
+</tr>
+<tr>
+<td>3.Interstellar</td>
+<td>Adventure, Drama, Science Fiction</td>
+</tr>
+<tr>
+<td> 4.Fight Club</td>
+<td>Drama</td>
+</tr>
+<tr>
+<td>5.The Lord of the Rings: The Fellowship of the Ring</td>
+<td>Adventure, Fantasy, Action</td>
+</tr>
+<tr>
+<td>6.Pulp Fiction</td>
+<td>Thriller, Crime</td>
+</tr>
+<tr>
+<td>7.The Shawshank Redemption</td>
+<td>Drama, Crime</td>
+</tr>
+<tr>
+<td>8.The Lord of the Rings: The Return of the King</td>
+<td>Adventure, Fantasy, Action</td>
+</tr>
+<tr>
+<td>9.Forrest Gump</td>
+<td>Comedy, Drama, Romance</td>
+</tr>
+<tr>
+<td>10.The Lord of the Rings: The Two Towers</td>
+<td>Adventure, Fantasy, Action</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+{% endblock %}

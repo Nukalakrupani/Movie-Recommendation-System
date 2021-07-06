@@ -1,0 +1,40 @@
+{% extends 'layout.html' %} {% block body %}
+
+<style>
+  .mt-0 {
+  margin-top: 50 !important;
+}
+
+table th{
+  background-color: #000;
+  color: white;
+  font-size: 24px;
+  font-weight: 900;
+ padding: .5rem;
+}
+table tr td{
+ color: #000;
+ padding: .5rem;
+   font-weight: 600;
+   font-size: 16px;
+ }
+</style>
+
+
+<div class="container py-2 mx-auto my-50 h-10 ">
+  <div class="row">
+      <div class="col-sm">
+
+          <div class="card card-body mt-3 " style="justify-content: center;opacity: 10;">
+              <!-- <h1>The given movie doesn't exist in our Dataset.</h1> -->
+              <div>
+                <a class="nav-link btn btn-info d-inline" href="{{ url_for('home') }}" ><i class="fa fa-chevron-left"></i> <b>Go Back</b></a>
+              </div>
+              <img  src="https://i.pinimg.com/originals/89/39/06/893906d9df7228cc36e1b3679a0d1dac.png" width="35%" style="margin: auto;"/>       
+          <br><br><br>
+     
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
